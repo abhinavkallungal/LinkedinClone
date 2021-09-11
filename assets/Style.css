@@ -1,0 +1,369 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --BG-Color: #F3F2EF;
+  --Icon-Color:#666666;
+  --Primery-Color:#0A66C2;
+  --Text-Color:#434649;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--BG-Color);
+}
+
+.navbar {
+  background-color: #fff;
+}
+
+.navbar .search {
+  padding: 10px 20px;
+  background-color: #EEF3F8;
+}
+
+.navbar .search input {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.navbar .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.navbar .menu span {
+  font-size: 14px;
+}
+
+.navbar .menu img {
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+}
+
+.home .col-lg-3 {
+  padding: 10px;
+}
+
+.home .col-lg-3 .profilecard {
+  border-radius: 10px;
+}
+
+.home .col-lg-3 .profilecard .cover {
+  height: 60px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #A0B4B7;
+}
+
+.home .col-lg-3 .profilecard .prodetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .col-lg-3 .profilecard .prodetails img {
+  position: relative;
+  top: -30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+}
+
+.home .col-lg-3 .profilecard .prodetails h6 {
+  font-size: 16px;
+}
+
+.home .col-lg-3 .profilecard .prodetails span {
+  font-size: 14px;
+  color: #666666;
+}
+
+.home .col-lg-3 .profilecard .proview {
+  padding: 10px;
+  border-top: 1px solid #BFBEBB;
+}
+
+.home .col-lg-3 .profilecard .proview .d-flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home .col-lg-3 .profilecard .proview .d-flex p {
+  color: #666666;
+  margin: 0px;
+}
+
+.home .col-lg-3 .profilecard .proview .d-flex span {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #0A66C2;
+}
+
+.home .col-lg-3 .profilecard .premium {
+  padding: 10px;
+  border-top: 1px solid #BFBEBB;
+}
+
+.home .col-lg-3 .profilecard .premium p {
+  font-size: 14px;
+  margin: 0px;
+  color: #666666;
+}
+
+.home .col-lg-3 .profilecard .myItems {
+  padding: 10px;
+  border-top: 1px solid #BFBEBB;
+}
+
+.home .col-lg-3 .recent {
+  color: #666666;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.home .col-lg-3 .recent .recentsub {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .col-lg-3 .recent .recentsub img {
+  margin: 5px 10px;
+}
+
+.home .col-lg-3 .recent .recentsub p {
+  font-size: 14px;
+  margin: 0px;
+}
+
+.home .col-lg-3 .recent .groups {
+  margin-top: 30px;
+}
+
+.home .col-lg-3 .recent .groups span {
+  color: #0A66C2;
+}
+
+.home .col-lg-3 .recent .Hashtags {
+  margin-top: 30px;
+}
+
+.home .col-lg-3 .recent .Hashtags span {
+  color: #0A66C2;
+}
+
+.home .col-lg-3 .Discover {
+  border-top: 1px solid #666666;
+  text-align: center;
+  color: #666666;
+  font-size: 18px;
+}
+
+.home .col-lg-5 {
+  margin-top: 10px;
+}
+
+.home .col-lg-5 .postInput {
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.home .col-lg-5 .postInput .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .col-lg-5 .postInput .text img {
+  margin: 10px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.home .col-lg-5 .postInput .text .input {
+  margin: 10px;
+  height: 50px;
+  width: 90%;
+  border-radius: 25px;
+  border: 1px solid #666666;
+  padding: 10px;
+}
+
+.home .col-lg-5 .postInput .text .input input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.home .col-lg-5 .postInput .files {
+  padding: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home .col-lg-5 .postInput .files .file {
+  margin: 10px 0px;
+}
+
+.home .col-lg-5 .postInput .files .file p {
+  margin: 0 5px;
+  color: #666666;
+}
+
+.home .col-lg-5 .feeds {
+  margin-top: 10px;
+}
+
+.home .col-lg-5 .feeds .feed {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.home .col-lg-5 .feeds .feed .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home .col-lg-5 .feeds .feed .header p {
+  margin: 0px;
+  margin: 0px;
+}
+
+.home .col-lg-5 .feeds .feed .header p span {
+  margin: 0px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.home .col-lg-5 .feeds .feed .pro {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .col-lg-5 .feeds .feed .pro p {
+  margin: 0px;
+}
+
+.home .col-lg-5 .feeds .feed .pro span {
+  margin: 0px;
+  font-size: 12px;
+}
+
+.home .col-lg-5 .feeds .feed .post img {
+  width: 100%;
+}
+
+.home .col-lg-5 .feeds .feed .likes {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 5px;
+}
+
+.home .col-lg-5 .feeds .feed .likes .d-flex p {
+  margin: 0px;
+}
+
+.home .col-lg-4 {
+  padding: 10px;
+}
+
+.home .col-lg-4 .news {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.home .col-lg-4 .news ul li {
+  margin: 5px;
+}
+
+.home .col-lg-4 .news ul li p {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.home .col-lg-4 .news ul li span {
+  margin: 0px;
+  font-size: 12px;
+}
+
+.home .col-lg-4 .course {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.home .col-lg-4 .course ul li {
+  margin: 5px;
+}
+
+.home .col-lg-4 .course ul li p {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.home .col-lg-4 .course ul li span {
+  margin: 0px;
+  font-size: 12px;
+}
+
+.home .col-lg-4 .course .showmore {
+  margin: auto;
+  font-weight: bold;
+  color: #666666;
+}
+
+.home .col-lg-4 .ad {
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.home .col-lg-4 .ad img {
+  border-radius: 10px;
+}
+/*# sourceMappingURL=Style.css.map */
