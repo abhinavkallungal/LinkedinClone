@@ -18,28 +18,73 @@
   display: flex;
 }
 
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 0px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid rgba(163, 163, 163, 0.5);
+}
+
 body {
   min-height: 100vh;
   width: 100%;
   background-color: var(--BG-Color);
 }
 
-.navbar {
+nav {
   background-color: #fff;
 }
 
-.navbar .search {
-  padding: 10px 20px;
+nav .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5  px;
+}
+
+nav .container .logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 30px;
+}
+
+nav .container .logo img {
+  width: 100%;
+  height: auto;
+}
+
+nav .container .search {
+  border-radius: 5px;
   background-color: #EEF3F8;
+  padding: 10px;
+  height: 40px;
 }
 
-.navbar .search input {
-  outline: none;
+nav .container .search input {
   border: none;
-  background: transparent;
+  outline: none;
+  background-color: transparent;
 }
 
-.navbar .menu {
+nav .container .navbar {
+  width: 450px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .container .navbar .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,22 +95,43 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 10px;
-  font-weight: bold;
 }
 
-.navbar .menu span {
-  font-size: 14px;
+nav .container .navbar .nav i {
+  font-size: 26px;
 }
 
-.navbar .menu img {
-  border-radius: 50px;
-  width: 30px;
-  height: 30px;
+nav .container .navbar .nav .img {
+  width: 40px;
+  height: 40px;
+}
+
+nav .container .navbar .nav .img img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+nav .container .right .menu {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav .container .right .trypremium {
+  text-align: center;
+  color: #915907;
+}
+
+.home .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .home .col-lg-3 {
   padding: 10px;
+  width: 36%;
 }
 
 .home .col-lg-3 .profilecard {
@@ -152,6 +218,9 @@ body {
 }
 
 .home .col-lg-3 .recent {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
   color: #666666;
   margin-top: 10px;
   border-radius: 10px;
@@ -198,6 +267,7 @@ body {
 
 .home .col-lg-5 {
   margin-top: 10px;
+  width: 60%;
 }
 
 .home .col-lg-5 .postInput {
@@ -254,7 +324,7 @@ body {
 }
 
 .home .col-lg-5 .feeds .feed {
-  padding: 5px;
+  padding: 15px 5px;
   border-radius: 10px;
 }
 
@@ -269,10 +339,12 @@ body {
 
 .home .col-lg-5 .feeds .feed .header p {
   margin: 0px;
-  margin: 0px;
+  color: #666666;
+  margin-bottom: 10px;
 }
 
 .home .col-lg-5 .feeds .feed .header p span {
+  color: #111;
   margin: 0px;
   font-weight: bold;
   font-size: 12px;
@@ -291,6 +363,7 @@ body {
 .home .col-lg-5 .feeds .feed .pro span {
   margin: 0px;
   font-size: 12px;
+  color: #666666;
 }
 
 .home .col-lg-5 .feeds .feed .post img {
@@ -301,18 +374,25 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 5px;
+  color: #666666;
+}
+
+.home .col-lg-5 .feeds .feed .likes .d-flex img {
+  fill: #666666;
 }
 
 .home .col-lg-5 .feeds .feed .likes .d-flex p {
-  margin: 0px;
+  margin: auto 3px;
+  color: #666666;
 }
 
 .home .col-lg-4 {
   padding: 10px;
+  width: 48%;
 }
 
 .home .col-lg-4 .news {
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
 }
 
@@ -331,9 +411,15 @@ body {
   font-size: 12px;
 }
 
+.home .col-lg-4 .sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
 .home .col-lg-4 .course {
   margin-top: 10px;
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
 }
 
@@ -365,5 +451,35 @@ body {
 
 .home .col-lg-4 .ad img {
   border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    background-color: lightblue;
+  }
+  body .col-lg-4 {
+    display: none;
+  }
+  body .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body .col-lg-3 {
+    width: 100%;
+  }
+  body .container {
+    width: 100%;
+  }
+  body .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=Style.css.map */
