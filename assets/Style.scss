@@ -374,29 +374,48 @@ nav{
 }
 @media only screen and (max-width: 992px) {
     body {
-      background-color: lightblue;
       .col-lg-4{
           display: none;
       }
       .container{
           width: 90%;
+          
+          
       }
       
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     body {
+        nav{
+            .container{
+                .left{
+                    .logo{
+                        width: 40px;
+                        height: 40px;
+                    }
+                    .search{
+                        display: none;
+                    }
+                    .navbar{
+                        .nav{
+                            span{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
       .col-lg-3{
           width: 100%;
       }
       .container{
           width: 100%;
-      }
-      .row{
-          flex-direction: column;
-          width: 100%;
-      }
+          
+        }
+
       
     }
 }
